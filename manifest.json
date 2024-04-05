@@ -1,0 +1,18 @@
+{  
+    "manifest_version": 2,  
+    "name": "自定义网站导航",  
+    "version": "1.0",  
+    "description": "一个包含预定义网站导航和自定义网站导航的浏览器扩展弹出页面。",  
+    "icons": {  
+        "16": "icon16.png",  
+        "48": "icon48.png",  
+        "128": "icon128.png"  
+    },  
+    "browser_action": {  
+        "default_icon": "icon19.png",  
+        "default_popup": "popup.html"  
+    },  
+    "permissions": [  
+        "activeTab" // 这里您可以根据需要添加更多权限  
+    ]  
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>网页选择器</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 10px;  
+        }  
+        h2 {  
+            margin-bottom: 10px;  
+        }  
+        ul {  
+            list-style-type: none;  
+            padding: 0;  
+        }  
+        li {  
+            margin: 5px 0;  
+        }  
+        #custom-links {  
+            margin-top: 20px;  
+        }  
+        .link-item {  
+            display: flex;  
+            align-items: center;  
+            justify-content: space-between;  
+        }  
+        .link-item input {  
+            margin-right: 5px;  
+        }  
+        #error-message {  
+            color: red;  
+            display: none;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h2>GOOD WEB HELPER</h2>  
+    <ul id="predefined-links">  
+        <li class="link-item"><a href="https://www.baidu.com" target="_blank">baidu</a></li>  
+        <li class="link-item"><a href="https://www.bilibili.com" target="_blank">bilibili</a></li>  
+        <!-- 添加更多预定义链接 -->  
+    </ul>  
+  
+    <h2>Customize</h2>  
+    <div id="custom-links">  
+        <form id="add-link-form">  
+            <div class="link-item">  
+                <input type="text" id="custom-url" placeholder="URL">  
+                <input type="text" id="custom-nickname" placeholder="name">  
+                <button type="submit">Submit</button>  
+            </div>  
+            <div id="error-message"></div>  
+        </form>  
+        <ul id="user-defined-links"></ul>  
+    </div>  
+  
+    <script src="popup.js"></script>  
+</body>  
+</html>
